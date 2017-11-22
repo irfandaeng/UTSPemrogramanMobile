@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".mDetail.Detail" />
+        <activity android:name=".Hasil" />
+        <activity android:name=".mDetail.Lingkaran" />
+        <activity android:name=".mDetail.Segitiga"></activity>
     </application>
 
 </manifest>

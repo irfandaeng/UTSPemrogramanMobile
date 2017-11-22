@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.acer.utspemrogramanmobile.Hasil">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil Perhitungan"
+        android:id="@+id/textHasil"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textHasil"
+        android:background="@drawable/kotak"
+        android:layout_margin="50dp"
+        android:textSize="50dp"
+        android:text="100"
+        android:id="@+id/EditHasil"/>
+
+</RelativeLayout>

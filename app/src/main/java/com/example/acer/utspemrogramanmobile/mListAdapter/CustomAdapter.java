@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import com.example.acer.utspemrogramanmobile.R;
 import com.example.acer.utspemrogramanmobile.mData.BangunRuang;
+import com.example.acer.utspemrogramanmobile.mDetail.Detail;
+import com.example.acer.utspemrogramanmobile.mDetail.Lingkaran;
 
 import java.util.ArrayList;
 
@@ -46,7 +48,7 @@ public class CustomAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
 
         if (convertView == null)
         {
@@ -65,7 +67,41 @@ public class CustomAdapter extends BaseAdapter {
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context,detail.class);
+
+                Intent intent = new Intent(context,Detail.class);
+
+                switch (position)
+                {
+                    case 0:
+                        Intent intentP = new Intent(context,Detail.class);
+                        context.startActivity(intentP);
+                        break;
+                    case 1:
+                        Intent intentL = new Intent(context,Lingkaran.class);
+                        context.startActivity(intentL);
+                        break;
+                    case 2:
+                        Intent intentS = new Intent(context,Detail.class);
+                        context.startActivity(intentS);
+                        break;
+                    case 3:
+                        intent.putExtra("Judul","Persegi Panjang");
+                        intent.putExtra("Panjang","Panjang");
+                        intent.putExtra("Lebar","Lebar");
+                        intent.putExtra("Level","Persegi");
+                        context.startActivity(intent);
+                        break;
+                    case 4:
+                        intent.putExtra("Judul","Trapesium");
+                        intent.putExtra("Panjang","Alas Bawah");
+                        intent.putExtra("Lebar","Alas Atas");
+                        intent.putExtra("Tinggi","Tinggi");
+                        intent.putExtra("SisiR","Sisi Kanan");
+                        intent.putExtra("Sisi","Sisi Kiri");
+                        intent.putExtra("Level","Persegi");
+                        context.startActivity(intent);
+                        break;
+                }
             }
         });
 

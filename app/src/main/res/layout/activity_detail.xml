@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.acer.utspemrogramanmobile.mDetail.Detail">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Persegi"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/textJudul_detail"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sisi"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/textPanjang_detail"
+        android:layout_below="@+id/textJudul_detail"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kotak"
+        android:id="@+id/editPanjang_detail"
+        android:layout_toRightOf="@+id/textPanjang_detail"
+        android:layout_below="@+id/textJudul_detail"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kotak"
+        android:text="Luas"
+        android:textColor="#81D4FA"
+        android:layout_below="@+id/editPanjang_detail"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:onClick="LuasBangun"
+        android:id="@+id/LuasPersegi"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kotak"
+        android:text="Keliling"
+        android:textColor="#81D4FA"
+        android:layout_below="@+id/editPanjang_detail"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="200dp"
+        android:onClick="KelilingBangun"
+        android:id="@+id/KelilingPersegi"/>
+
+</RelativeLayout>
