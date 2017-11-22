@@ -65,7 +65,7 @@ public class CustomAdapter extends BaseAdapter {
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context);
+                Intent intent = new Intent(context,detail.class);
             }
         });
 
