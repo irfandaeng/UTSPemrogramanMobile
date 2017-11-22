@@ -13,6 +13,7 @@ import com.example.acer.utspemrogramanmobile.R;
 import com.example.acer.utspemrogramanmobile.mData.BangunRuang;
 import com.example.acer.utspemrogramanmobile.mDetail.Detail;
 import com.example.acer.utspemrogramanmobile.mDetail.Lingkaran;
+import com.example.acer.utspemrogramanmobile.mDetail.Segitiga;
 
 import java.util.ArrayList;
 
@@ -81,7 +82,7 @@ public class CustomAdapter extends BaseAdapter {
                         context.startActivity(intentL);
                         break;
                     case 2:
-                        Intent intentS = new Intent(context,Detail.class);
+                        Intent intentS = new Intent(context,Segitiga.class);
                         context.startActivity(intentS);
                         break;
                     case 3:

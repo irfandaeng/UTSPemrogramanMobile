@@ -1,7 +1,6 @@
 package com.example.acer.utspemrogramanmobile.mDetail;
 
 import android.content.Intent;
-import android.renderscript.Double2;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +10,7 @@ import android.widget.EditText;
 import com.example.acer.utspemrogramanmobile.Hasil;
 import com.example.acer.utspemrogramanmobile.R;
 
-public class Segitiga extends AppCompatActivity {
+public class KelilingSegitiga extends AppCompatActivity {
 
     public EditText inputPanjang,inputTinggi;
     public Button LuasPersegi,KelilingP;
@@ -19,7 +18,8 @@ public class Segitiga extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_segitiga);
+        setContentView(R.layout.activity_keliling_segitiga);
+
 
         inputPanjang = (EditText)findViewById(R.id.editPanjang_detail);
         inputTinggi = (EditText)findViewById(R.id.editTinggi_detail);
@@ -41,14 +41,6 @@ public class Segitiga extends AppCompatActivity {
                 catch (Exception ex){
 
                 }
-            }
-        });
-
-        KelilingP.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Segitiga.this, KelilingSegitiga.class);
-                startActivity(i);
             }
         });
 

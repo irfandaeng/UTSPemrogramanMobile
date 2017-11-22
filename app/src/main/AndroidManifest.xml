@@ -19,7 +19,8 @@
         <activity android:name=".mDetail.Detail" />
         <activity android:name=".Hasil" />
         <activity android:name=".mDetail.Lingkaran" />
-        <activity android:name=".mDetail.Segitiga"></activity>
+        <activity android:name=".mDetail.Segitiga" />
+        <activity android:name=".mDetail.KelilingSegitiga"></activity>
     </application>
 
 </manifest>

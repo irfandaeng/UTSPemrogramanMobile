@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Lingkaran"
+        android:text="Keliling Segitiga"
         android:textColor="#000000"
         android:textSize="30sp"
         android:fontFamily="sans-serif-condensed"
@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alas"
+        android:text="Sisi A"
         android:textColor="#000000"
         android:textSize="20sp"
         android:fontFamily="sans-serif-condensed"
@@ -42,11 +42,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tinggi"
+        android:text="Sisi B"
         android:textColor="#000000"
         android:textSize="20sp"
         android:fontFamily="sans-serif-condensed"
-        android:id="@+id/textTinggi_detail"
+        android:id="@+id/textSisiB_detail"
         android:layout_below="@+id/editPanjang_detail"
         android:layout_margin="10dp"/>
 
@@ -54,9 +54,31 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:background="@drawable/kotak"
-        android:id="@+id/editTinggi_detail"
+        android:id="@+id/editSisiB_detail"
         android:layout_toRightOf="@+id/textPanjang_detail"
         android:layout_below="@+id/editPanjang_detail"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sisi C"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/textSisiC_detail"
+        android:layout_below="@+id/editSisiB_detail"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kotak"
+        android:id="@+id/editSisiC_detail"
+        android:layout_toRightOf="@+id/textPanjang_detail"
+        android:layout_below="@+id/editSisiB_detail"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:inputType="number"/>
@@ -65,24 +87,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/kotak"
-        android:text="Luas"
+        android:text="Keliling"
         android:textColor="#81D4FA"
-        android:layout_below="@+id/editTinggi_detail"
+        android:layout_below="@+id/editSisiC_detail"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="50dp"
         android:onClick="LuasBangun"
-        android:id="@+id/LuasPersegi"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/kotak"
-        android:text="Keliling"
-        android:textColor="#81D4FA"
-        android:layout_below="@+id/editTinggi_detail"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="200dp"
-        android:onClick="KelilingBangun"
-        android:id="@+id/KelilingPersegi"/>
+        android:id="@+id/LuasPersegi"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
